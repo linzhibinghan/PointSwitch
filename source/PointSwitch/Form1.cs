@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace MyPointSwitchApp
 {
@@ -327,6 +328,66 @@ namespace MyPointSwitchApp
         {
             // 当 textBox4 文本内容发生变化时，保存配置信息到INI文件
             SaveConfigToIni();
+        }
+
+        private void button01_Click(object sender, EventArgs e)
+        {
+            string directoryPath = textBox1.Text;
+
+            if (!string.IsNullOrWhiteSpace(directoryPath))
+            {
+                // 使用默认的文件资源管理器打开目录
+                Process.Start("explorer.exe", directoryPath);
+            }
+            else
+            {
+                MessageBox.Show("请输入一个有效的目录路径。");
+            }
+        }
+
+        private void button02_Click(object sender, EventArgs e)
+        {
+            string directoryPath = textBox2.Text;
+
+            if (!string.IsNullOrWhiteSpace(directoryPath))
+            {
+                // 使用默认的文件资源管理器打开目录
+                Process.Start("explorer.exe", directoryPath);
+            }
+            else
+            {
+                MessageBox.Show("请输入一个有效的目录路径。");
+            }
+        }
+
+        private void button03_Click(object sender, EventArgs e)
+        {
+            string directoryPath = textBox3.Text;
+
+            if (!string.IsNullOrWhiteSpace(directoryPath))
+            {
+                // 使用默认的文件资源管理器打开目录
+                Process.Start("explorer.exe", directoryPath);
+            }
+            else
+            {
+                MessageBox.Show("请输入一个有效的目录路径。");
+            }
+        }
+
+        private void button04_Click(object sender, EventArgs e)
+        {
+            string directoryPath = textBox4.Text;
+
+            if (!string.IsNullOrWhiteSpace(directoryPath))
+            {
+                // 使用默认的文件资源管理器打开目录
+                Process.Start("explorer.exe", directoryPath);
+            }
+            else
+            {
+                MessageBox.Show("请输入一个有效的目录路径。");
+            }
         }
     }
 }

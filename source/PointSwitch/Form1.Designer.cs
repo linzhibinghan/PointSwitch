@@ -43,6 +43,10 @@
             this.button8 = new System.Windows.Forms.Button();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.treeView2 = new System.Windows.Forms.TreeView();
+            this.button01 = new System.Windows.Forms.Button();
+            this.button02 = new System.Windows.Forms.Button();
+            this.button03 = new System.Windows.Forms.Button();
+            this.button04 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -173,6 +177,46 @@
             this.treeView2.Size = new System.Drawing.Size(322, 367);
             this.treeView2.TabIndex = 13;
             // 
+            // button01
+            // 
+            this.button01.Location = new System.Drawing.Point(411, 103);
+            this.button01.Name = "button01";
+            this.button01.Size = new System.Drawing.Size(75, 23);
+            this.button01.TabIndex = 14;
+            this.button01.Text = "打开目录";
+            this.button01.UseVisualStyleBackColor = true;
+            this.button01.Click += new System.EventHandler(this.button01_Click);
+            // 
+            // button02
+            // 
+            this.button02.Location = new System.Drawing.Point(892, 103);
+            this.button02.Name = "button02";
+            this.button02.Size = new System.Drawing.Size(75, 23);
+            this.button02.TabIndex = 15;
+            this.button02.Text = "打开目录";
+            this.button02.UseVisualStyleBackColor = true;
+            this.button02.Click += new System.EventHandler(this.button02_Click);
+            // 
+            // button03
+            // 
+            this.button03.Location = new System.Drawing.Point(411, 164);
+            this.button03.Name = "button03";
+            this.button03.Size = new System.Drawing.Size(75, 23);
+            this.button03.TabIndex = 16;
+            this.button03.Text = "打开目录";
+            this.button03.UseVisualStyleBackColor = true;
+            this.button03.Click += new System.EventHandler(this.button03_Click);
+            // 
+            // button04
+            // 
+            this.button04.Location = new System.Drawing.Point(892, 164);
+            this.button04.Name = "button04";
+            this.button04.Size = new System.Drawing.Size(75, 23);
+            this.button04.TabIndex = 17;
+            this.button04.Text = "打开目录";
+            this.button04.UseVisualStyleBackColor = true;
+            this.button04.Click += new System.EventHandler(this.button04_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -180,6 +224,10 @@
             this.BackgroundImage = global::PointSwitch.Properties.Resources._0b7b02087bf40ad1021630eb552c11dfa8eccecc;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1082, 606);
+            this.Controls.Add(this.button04);
+            this.Controls.Add(this.button03);
+            this.Controls.Add(this.button02);
+            this.Controls.Add(this.button01);
             this.Controls.Add(this.treeView2);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.button8);
@@ -218,6 +266,10 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.TreeView treeView2;
+        private System.Windows.Forms.Button button01;
+        private System.Windows.Forms.Button button02;
+        private System.Windows.Forms.Button button03;
+        private System.Windows.Forms.Button button04;
     }
 }
 
