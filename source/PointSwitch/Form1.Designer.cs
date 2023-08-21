@@ -47,6 +47,8 @@
             this.button02 = new System.Windows.Forms.Button();
             this.button03 = new System.Windows.Forms.Button();
             this.button04 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -123,7 +125,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(402, 292);
+            this.button5.Location = new System.Drawing.Point(411, 292);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 8;
@@ -133,7 +135,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(402, 428);
+            this.button6.Location = new System.Drawing.Point(411, 428);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 9;
@@ -217,6 +219,26 @@
             this.button04.UseVisualStyleBackColor = true;
             this.button04.Click += new System.EventHandler(this.button04_Click);
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(411, 358);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 18;
+            this.button9.Text = "增加";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click_1);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(892, 358);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 19;
+            this.button10.Text = "增加";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -224,6 +246,8 @@
             this.BackgroundImage = global::PointSwitch.Properties.Resources._0b7b02087bf40ad1021630eb552c11dfa8eccecc;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1082, 606);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button04);
             this.Controls.Add(this.button03);
             this.Controls.Add(this.button02);
@@ -270,6 +294,8 @@
         private System.Windows.Forms.Button button02;
         private System.Windows.Forms.Button button03;
         private System.Windows.Forms.Button button04;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
     }
 }
 

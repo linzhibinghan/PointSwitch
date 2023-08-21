@@ -162,6 +162,44 @@ namespace MyPointSwitchApp
             MessageBox.Show($"已成功替换 {replacedFilesCount} 个文件。");
         }
 
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            TreeNode selectedNode = treeView1.SelectedNode;
+            if (selectedNode == null)
+            {
+                MessageBox.Show("请先选择一个文件夹。");
+                return;
+            }
+
+            string selectedFolderName = selectedNode.FullPath;
+            string sourceFolderPath = Path.Combine(textBox3.Text, selectedFolderName);
+            string targetFolderPath = textBox1.Text;
+
+            int copiedFilesCount = CopyFiles(sourceFolderPath, targetFolderPath);
+            int targetFilesCount = Directory.GetFiles(targetFolderPath, "*", SearchOption.AllDirectories).Length;
+
+            MessageBox.Show($"成功复制 {copiedFilesCount} 个文件。\n目标文件夹内共有 {targetFilesCount} 个文件。");
+        }
+
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+            TreeNode selectedNode = treeView2.SelectedNode;
+            if (selectedNode == null)
+            {
+                MessageBox.Show("请先选择一个文件夹。");
+                return;
+            }
+
+            string selectedFolderName = selectedNode.FullPath;
+            string sourceFolderPath = Path.Combine(textBox4.Text, selectedFolderName);
+            string targetFolderPath = textBox2.Text;
+
+            int copiedFilesCount = CopyFiles(sourceFolderPath, targetFolderPath);
+            int targetFilesCount = Directory.GetFiles(targetFolderPath, "*", SearchOption.AllDirectories).Length;
+
+            MessageBox.Show($"成功复制 {copiedFilesCount} 个文件。\n目标文件夹内共有 {targetFilesCount} 个文件。");
+        }
+
         private void ShowSubDirectoriesInTreeView(string folderPath, System.Windows.Forms.TreeView treeView)
         {
             treeView.Nodes.Clear();
